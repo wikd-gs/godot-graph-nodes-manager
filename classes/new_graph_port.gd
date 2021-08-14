@@ -13,7 +13,8 @@ export var type_right := 0
 export var v_offset := 0.0
 
 # The followed node's path, position updates must (and will) be mandled by the NewGraphNode
-export var followed_node: NodePath
+export var followed_node_path: NodePath
+var followed_node: Control
 
 # The connection alignment relative to the followed_node (or NewGraphNode)'s rect
-export var followed_node_align := 0.0
+export(float, 0, 1) var followed_node_align := 0.0
